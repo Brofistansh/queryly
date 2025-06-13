@@ -9,7 +9,6 @@ class HomePage extends StatelessWidget {
     return const Scaffold(
       body: Row(
         children: [
-          //side nav bar
           SideBar(),
           Column(
             children: [
