@@ -14,7 +14,7 @@ class _SideBarState extends State<SideBar> {
   @override
   Widget build(BuildContext context) {
     return AnimatedContainer(
-      width: isCollapsed ? 64 : 150 ,
+      width: isCollapsed ? 64 : 150,
       color: AppColors.sideNav,
       duration: const Duration(milliseconds: 100),
       child: Column(

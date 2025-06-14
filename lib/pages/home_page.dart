@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:queryly/widgets/search_section.dart';
 import 'package:queryly/widgets/side_bar.dart';
 
 class HomePage extends StatelessWidget {
@@ -6,15 +7,18 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Row(
         children: [
-          SideBar(),
-          Column(
-            children: [
-              //search section
-              //footer
-            ],
+          const SideBar(),
+          Expanded(
+            child: Column(
+              children: [
+                Expanded(child: const SearchSection()),
+                Container(height: 20),
+                //footer
+              ],
+            ),
           ),
         ],
       ),
